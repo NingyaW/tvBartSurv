@@ -1,0 +1,26 @@
+Package: tvBartSurv
+Type: Package
+Title: Simulation and Gibbs Sampler for Time-Varying Treatment Effects with BART Baseline Hazard
+Version: 0.1.3
+Authors@R: 
+    c(person(given = "Ningya", family = "Wang", role = c("aut","cre"),
+             email = "REPLACE-ME@example.com"))
+Maintainer: Ningya Wang <REPLACE-ME@example.com>
+Description: Tools to simulate survival data with a time-varying binary covariate and run
+    a Gibbs sampler that alternates between a log-linear BART model for subject effects and
+    a spline-based baseline hazard with Metropolis-Hastings updates.
+License: MIT + file LICENSE
+Depends: R (>= 4.1)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: 
+    stats,
+    splines,
+    R2BayesX,
+    loglinearBART
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+Config/testthat/edition: 3
